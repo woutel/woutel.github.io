@@ -2,14 +2,14 @@ $(document).ready(function() {
 
 	// Preloader
 	$(window).load(function(){
-		$('.preloader').fadeOut();		
+		$('.preloader').fadeOut();
 	});
 
-	// Datepicker Options  
+	// Datepicker Options
 	var nowTemp = new Date();
 	var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
-	 
-	var checkin = $('#datein').datepicker({		
+
+	var checkin = $('#check_in').datepicker({
 	  onRender: function(date) {
 		return date.valueOf() < now.valueOf() ? 'disabled' : '';
 	  }
@@ -20,9 +20,9 @@ $(document).ready(function() {
 		checkout.setValue(newDate);
 	  }
 	  checkin.hide();
-	  $('#dateout')[0].focus();
+	  $('#check_out')[0].focus();
 	}).data('datepicker');
-	var checkout = $('#dateout').datepicker({
+	var checkout = $('#check_out').datepicker({
 	  onRender: function(date) {
 		return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
 	  }
@@ -88,43 +88,7 @@ $(document).ready(function() {
 	$('.btn-custom-border, a.mouse').click(function () {
 		$.scrollTo('.features', 1000);
 	return false;
-	});
-
-	// Screenshot carousel
-	$(".screens").owlCarousel({
-		items: 4,
-		navigation:true,
-		navigationText: [
-			"<i class='fa fa-angle-left btn-slide'></i>",
-			"<i class='fa fa-angle-right btn-slide'></i>"
-			],
-		pagination: false,
-		itemsDesktop: [1000, 4],
-        itemsDesktopSmall: [990, 3],
-        itemsTablet: [600, 1],
-        itemsMobile: false
-	});
-
-	// Screenshot lightbox
-	$('.screens a').nivoLightbox({
-	    effect: 'fadeScale'
-	});
-
-	// Brief carousel
-	$(".small-slider").owlCarousel({
-		items: 1,
-		navigation: true,
-		navigationText: [
-			"<i class='fa fa-angle-left btn-slide'></i>",
-			"<i class='fa fa-angle-right btn-slide'></i>"
-			],
-		pagination: false,
-		itemsDesktop: [1000, 1],
-        itemsDesktopSmall: [900, 1],
-        itemsTablet: [600, 1],
-        itemsMobile: false
-	})
-
+	});
 	// Testemonial carousel
 	$(".testemonials").owlCarousel({
 		autoPlay: 8000,
@@ -137,24 +101,34 @@ $(document).ready(function() {
         itemsMobile: false
 	});
 
-	// Initiat fitVids.js
-	$(".video-item").fitVids();
-
 	// Bootstrap Tab navigation
 	$('.tabs a').click(function (e) {
 		e.preventDefault()
 		$(this).tab('show')
 	});
-
-	// Testemonial carousel
-	$(".customer-slider").owlCarousel({
-		autoPlay: 8000,
-		items: 5,
-		pagination: false,
-		itemsDesktop: [1000, 1],
-        itemsDesktopSmall: [900, 1],
-        itemsTablet: [600, 1],
-        itemsMobile: false
-	});
- 
+	Parse.initialize("f7MCAXWYuNaRlLXkbbciOLGoaQzSXqNInlOJ60JC", "72lJ8dvBy8p6kfyrbhucntRvpKhR7Sh5oALeMATu");
+
+	$('#send_request').click(function () {
+	  var Request = Parse.Object.extend("Request");
+	  var request = new Request();
+	  request.save({
+	    num_guests: $('#num_guests').val(),
+	    price_max: $('#price_max').val(),
+	    check_in: $('#check_in').val(),
+	    check_out: $('#check_out').val(),
+	    comment: $('#comment').val(),
+	    email: $('email').val()
+	  }, {
+	    success: function(object) {
+	      // Change to message
+	      $("#contact_form").hide();
+	      $("#on_submit_message").show();
+	    },
+	    error: function(model, error) {
+	      console.log(error);
+	      alert("Error sending data to backend");
+	    }
+	  });
+	});
+
 });

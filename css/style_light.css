@@ -11,7 +11,7 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
     margin:0;
@@ -38,7 +38,7 @@ body {
 }
 
 article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
+footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
@@ -159,8 +159,8 @@ figure img {
         border-bottom-right-radius: 4px;
     }
 
-.nav-tabs>li.active>a, 
-.nav-tabs>li.active>a:hover, 
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:focus {
     z-index: 100;
     color: #fff;
@@ -204,7 +204,7 @@ h4 {
             border-radius: 3px;
 }
 
-.btn:hover, 
+.btn:hover,
 .btn:focus {
     color: #fff;
 }
@@ -345,7 +345,7 @@ section {
 .intro {
     background: url(../images/woutel-ofertas-hoteles-sevilla.jpg); /*no-repeat fixed;*/
     background-attachment: scroll;
-	background-position: center bottom; 
+	background-position: center bottom;
     -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -487,7 +487,7 @@ section {
     .service:hover {
         margin-top: -10px;
     }
- 
+
 .service i {
     font-size: 42px;
     margin-bottom: 30px;
@@ -522,9 +522,9 @@ section {
 }
 
 .newsletter #success_page p,
-.newsletter #message {
+.newsletter #on_submit_message {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 18px;    display: none;
 }
 
 .screens .owl-prev {
@@ -707,7 +707,7 @@ ul.extra-features i {
 
 .customers .customer-slider .item:hover img {
     opacity: 1;
-} 
+}
 
 /* Download Section */
 

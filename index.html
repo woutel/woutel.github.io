@@ -39,7 +39,7 @@
 <![endif]-->
 
 <!-- Start of Woutel Zendesk Widget script -->
-<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","woutelhelp.zendesk.com");/*]]>*/</script>
+<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("http://assets.zendesk.com/embeddable_framework/main.js","woutelhelp.zendesk.com");/*]]>*/</script>
 <!-- End of Woutel Zendesk Widget script -->
 
 </head>
@@ -115,22 +115,23 @@
 
 <!-- begin newsletter section -->
 <section class="newsletter" id="newsletter">
-	<form method="post" name="contactform" id="contactform">
-		<div class="container">
+  <div class="container">
+	   <form method="post" name="contact_form" id="contact_form">
+
 			<!-- <fieldset> -->
 				<div class="row">
 					<div class="col-xs-6 col-md-3 margin-vy">
 						<label class="sr-only">Número personas</label>
 						<div class="input-group">
 							<div class="input-group-addon">Nº Personas</div>
-							<input type="number" min="0" class="form-control" id="num_personas" value="2">
+							<input type="number" min="0" class="form-control" id="num_guests" value="2">
 						</div>
 					</div>
 					<div class="col-xs-6 col-md-3 margin-vy">
 						<label class="sr-only">Precio máximo de la estancia (en euros)</label>
 						<div class="input-group">
 							<div class="input-group-addon">Precio máximo</div>
-							<input type="number" min="0" class="form-control" id="precio_max">
+							<input type="number" min="0" class="form-control" id="price_max">
 							<div class="input-group-addon">&euro;</div>
 						</div>
 					</div>
@@ -138,14 +139,14 @@
 						<label class="sr-only">Fecha de entrada</label>
 						<div class="input-group">
 							<div class="input-group-addon">Fecha Llegada</div>
-							<input type="text" class="form-control" data-date-format="dd-mm-yyyy" id="datein">
+							<input type="text" class="form-control" data-date-format="dd-mm-yyyy" id="check_in">
 						</div>
 					</div>
 					<div class="col-md-3 margin-vy">
 						<label class="sr-only">Fecha de salida</label>
 						<div class="input-group">
 							<div class="input-group-addon">Fecha Salida</div>
-							<input type="text" class="form-control" data-date-format="dd-mm-yyyy" id="dateout">
+							<input type="text" class="form-control" data-date-format="dd-mm-yyyy" id="check_out">
 						</div>
 					</div>
 				</div>
@@ -170,8 +171,8 @@
 					</div>
 				</div>
 		</form>
-		<div class="tex-center">
-			<div id="message"></div>
+		<div class="tex-center" id="on_submit_message">
+      :-P
 		</div>
 	</div><!-- /container -->
 </section>
@@ -439,6 +440,5 @@
 
 <!-- Custom Javascript -->
 <script src="js/main.js"></script><script src="http://www.parsecdn.com/js/parse-1.3.5.min.js"></script>
-<script>Parse.initialize("f7MCAXWYuNaRlLXkbbciOLGoaQzSXqNInlOJ60JC", "72lJ8dvBy8p6kfyrbhucntRvpKhR7Sh5oALeMATu");$('#send_request').click(function () {  var Request = Parse.Object.extend("Request");  var request = new Request();  request.save({    comment: $('#comment').val()  }, {    success: function(object) {      // Change to message      $(".success").show();    },    error: function(model, error) {      $(".error").show();    }  });});</script>
 </body>
 </html>
