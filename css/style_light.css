@@ -173,8 +173,8 @@ figure img {
 /* Heading Sizes */
 
 h1 {
-    font-size: 42px;
-    font-weight: 300;
+    font-size: 52px;
+    font-weight: 400;
 }
 
 h2 {
@@ -264,7 +264,7 @@ h4 {
 /* Sections */
 
 section {
-    padding: 100px 0;
+    padding: 40px 0 25px 0;
 }
 
 .section-head {
@@ -343,22 +343,27 @@ section {
 /* Intro Section */
 
 .intro {
-    background-image: url(../images/introslider/slide1.jpg);
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-            background-size: cover;
+    background: url(../images/woutel-ofertas-hoteles-sevilla.jpg); /*no-repeat fixed;*/
+    background-attachment: scroll;
+	background-position: center bottom; 
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*max-height: 560px;*/
 }
 
     .intro .intro-section {
         max-width: 675px;
-        padding: 130px 0;
+        padding: 50px 0 80px 0;
         margin: 0 auto;
         text-align: center;
     }
         .intro .intro-section h1 {
             color: #fff;
-            padding: 50px 0;
+            padding: 10px 0 50px 0;
             line-height: 1.3em;
+			/*text-shadow: 2px 2px 1px #3E3E3E;#1f1f1f;*/
         }
         .intro .intro-section .btn-custom-border {
             color: #fff;
@@ -757,7 +762,7 @@ ul.extra-features i {
 }
 
 .footer img {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .footer ul {
@@ -781,3 +786,18 @@ ul.extra-features i {
 .footer h4 {
     margin-bottom: 5px;
 }
+.margin-vy{margin-bottom:30px;}
+
+.navbar-brand {
+padding: 5px 15px;
+}
+.alpha60 {
+/* Fallback for web browsers that doesn't support RGBa */
+background: rgb(0, 0, 0);
+/* RGBa with 0.6 opacity */
+background: rgba(0, 0, 0, 0.2);
+/* For IE 5.5 - 7*/
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+/* For IE 8*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}

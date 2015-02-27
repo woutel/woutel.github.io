@@ -7,7 +7,7 @@
     .intro,
     .newsletter,
     .video {
-        background-attachment: scroll;
+        background-attachment: scroll;
     }
     a.mouse {
         display: none;

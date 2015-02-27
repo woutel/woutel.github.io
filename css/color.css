@@ -1,6 +1,6 @@
 .nav-tabs>li>a:hover {
-	background-color: #0099e6;
-	border-color: #0099e6;
+	background-color: #158D9F;
+	border-color: #158D9F;
 }
 
 .nav-tabs>li.active>a, 
@@ -11,18 +11,18 @@
 }
 
 .btn-custom {
-    border-color: #0099e6;
-    background-color: #0099e6;
+    border-color: #158D9F;
+    background-color: #158D9F;
 }
 
 .btn-custom-border {
     background: transparent;
-    border-color: #0099e6;
+    border-color: #158D9F;
     color: #ffffff;
 }
 
 .features .feature .icon-container .icon {
-    border: 1px solid #0099e6;
+    border: 1px solid #158D9F;
 }
 
 .btn-send,
@@ -46,16 +46,16 @@
 .btn-slide,
 .features .feature:hover .icon-container .icon,
 .footer span.jobs {
-    background-color: #0099e6;
+    background-color: #158D9F;
 }
 
 
 .underline {
-	border-top: 4px solid #0099e6;
+	border-top: 4px solid #158D9F;
 }
 
 .underline-small {
-    border-top: 2px solid #0099e6;
+    border-top: 2px solid #158D9F;
 }
 
 
@@ -70,9 +70,9 @@
 ul.extra-features i,
 .footer a:hover,
 .footer i:hover {
-    color: #0099e6;
+    color: #158D9F;
 }
 
 .footer span.jobs:after {
-	border-right-color: #0099e6;
+	border-right-color: #158D9F;
 }
