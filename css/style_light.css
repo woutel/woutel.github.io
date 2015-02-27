@@ -342,16 +342,19 @@ section {
 
 /* Intro Section */
 
-.intro {
+.intro {    display: table;
+    width: 100%;
+    padding: 0 0 0 0;
+
     background: url(../images/woutel-ofertas-hoteles-sevilla.jpg); /*no-repeat fixed;*/
     background-attachment: scroll;
 	background-position: center bottom;
-    -webkit-background-size: cover;
+  -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	/*max-height: 560px;*/
-}
+}.intro-alpha {  display: table-cell;  background-color: rgba(150,150,180,0.3);  box-sizing: border-box;  width: 100%;}
 
     .intro .intro-section {
         max-width: 675px;
