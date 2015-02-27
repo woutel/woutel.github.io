@@ -528,6 +528,7 @@ section {
 .newsletter #on_submit_message {
     color: #ffffff;
     font-size: 18px;    display: none;
+	padding: 20px 0 30px 0;
 }
 
 .screens .owl-prev {
