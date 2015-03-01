@@ -264,7 +264,7 @@ h4 {
 /* Sections */
 
 section {
-    padding: 40px 0 25px 0;
+    padding: 100px 0;
 }
 
 .section-head {
@@ -795,13 +795,6 @@ ul.extra-features i {
 .navbar-brand {
 padding: 5px 15px;
 }
-.alpha60 {
-/* Fallback for web browsers that doesn't support RGBa */
-background: rgb(0, 0, 0);
-/* RGBa with 0.6 opacity */
-background: rgba(0, 0, 0, 0.2);
-/* For IE 5.5 - 7*/
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-/* For IE 8*/
--ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+#newsletter {
+    padding: 40px 0 25px 0;
 }
