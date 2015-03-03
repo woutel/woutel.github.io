@@ -117,7 +117,7 @@ $(document).ready(function() {
 	    check_in: $('#check_in').val(),
 	    check_out: $('#check_out').val(),
 	    comment: $('#comment').val(),
-	    email: $('email').val()
+	    email: $('#email').val()
 	  }, {
 	    success: function(object) {
 	      // Change to message
