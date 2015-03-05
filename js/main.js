@@ -132,6 +132,6 @@ $(document).ready(function() {
 				}
 			});				
 		}
-		else {alert("Debe introducir un email v&aacute;lido.");}	  
+		else {alert("Debe introducir un email correcto.");}	  
 	});
 });
