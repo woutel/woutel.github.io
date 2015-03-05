@@ -109,26 +109,29 @@ $(document).ready(function() {
 	Parse.initialize("f7MCAXWYuNaRlLXkbbciOLGoaQzSXqNInlOJ60JC", "72lJ8dvBy8p6kfyrbhucntRvpKhR7Sh5oALeMATu");
 
 	$('#send_request').click(function () {
-	  var Request = Parse.Object.extend("Request");
-	  var request = new Request();
-	  request.save({
-	    num_guests: $('#num_guests').val(),
-	    price_max: $('#price_max').val(),
-	    check_in: $('#check_in').val(),
-	    check_out: $('#check_out').val(),
-	    comment: $('#comment').val(),
-	    email: $('#email').val()
-	  }, {
-	    success: function(object) {
-	      // Change to message
-	      $("#contact_form").hide();
-	      $("#on_submit_message").show();
-	    },
-	    error: function(model, error) {
-	      console.log(error);
-	      alert("Error sending data to backend");
-	    }
-	  });
+		if ($('#email').val().match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/)) {			
+			
+			var Request = Parse.Object.extend("Request");
+			var request = new Request();
+			request.save({
+			   num_guests: $('#num_guests').val(),
+			   price_max: $('#price_max').val(),
+			   check_in: $('#check_in').val(),
+			   check_out: $('#check_out').val(),
+			   comment: $('#comment').val(),
+			   email: $('#email').val()
+			}, {
+				success: function(object) {
+				  // Change to message
+				  $("#contact_form").hide();
+				  $("#on_submit_message").show();
+				},
+				error: function(model, error) {
+					console.log(error);
+				alert("Error sending data to backend");
+				}
+			});				
+		}
+		else {alert("Debe introducir un email v&aacute;lido.");}	  
 	});
-
 });
