@@ -801,3 +801,8 @@ padding: 5px 15px;
 .texto{text-align:left;line-height: 2em;}
 
 .texto li{margin-bottom:15px;}
+
+.form-control[readonly], fieldset[disabled] .form-control {
+  cursor: pointer;
+  background: none;  
+}
