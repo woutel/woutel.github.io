@@ -60,40 +60,6 @@
 <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("http://assets.zendesk.com/embeddable_framework/main.js","woutelhelp.zendesk.com");/*]]>*/</script>
 <!-- End of Woutel Zendesk Widget script -->
 
-<!-- Google Code for Pedidos de reservas Conversion Page
-In your html page, add the snippet and call
-goog_report_conversion when someone clicks on the
-chosen link or button. -->
-<script type="text/javascript">
-  /* <![CDATA[ */
-  goog_snippet_vars = function() {
-    var w = window;
-    w.google_conversion_id = 954033991;
-    w.google_conversion_label = "faWYCLqSoVoQx871xgM";
-    w.google_remarketing_only = false;
-  }
-  // DO NOT CHANGE THE CODE BELOW.
-  goog_report_conversion = function(url) {
-    goog_snippet_vars();
-    window.google_conversion_format = "3";
-    window.google_is_call = true;
-    var opt = new Object();
-    opt.onload_callback = function() {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  }
-  var conv_handler = window['google_trackConversion'];
-  if (typeof(conv_handler) == 'function') {
-    conv_handler(opt);
-  }
-}
-/* ]]> */
-</script>
-<script type="text/javascript"
-  src="//www.googleadservices.com/pagead/conversion_async.js">
-</script>
-
 </head>
 
 <body>
@@ -229,12 +195,34 @@ chosen link or button. -->
 						</div>
 					</div>
 					<div class="col-md-2 margin-vy">
-						<button type="button" onclick="goog_report_conversion()" class="submit btn btn-send" id="send_request" value="Recibir Ofertas!">Recibir Ofertas!</button>
+						<button type="button" class="submit btn btn-send" id="send_request" value="Recibir Ofertas!">Recibir Ofertas!</button>
 					</div>
 				</div>
 		</form>
 		<div class="text-center" id="on_submit_message">
       En un plazo inferior a 3 días recibirás un correo con las ofertas de los mejores hoteles de Sevilla.
+			<!-- Google Code for Peticiones Enviadas Conversion Page -->
+				<script type="text/javascript">
+				/* <![CDATA[ */
+				var google_conversion_id = 954033991;
+				var google_conversion_language = "en";
+				var google_conversion_format = "3";
+				var google_conversion_color = "ffffff";
+				var google_conversion_label = "ODQ7CMT4qFoQx871xgM";
+				var google_remarketing_only = false;
+				/* ]]> */
+				</script>
+				<script type="text/javascript" src="//
+				www.googleadservices.com/pagead/conversion.js">
+				</script>
+				<noscript>
+				<div style="display:inline;">
+				<img height="1" width="1" style="border-style:none;" alt="" src="//
+				www.googleadservices.com/pagead/conversion/954033991/?label=ODQ7CMT4qFoQx871xgM&amp;guid=ON&amp;script=0
+				"/>
+				</div>
+				</noscript>
+
 		</div>
 	</div><!-- /container -->
 </section>
