@@ -109,7 +109,7 @@ $(document).ready(function() {
 	Parse.initialize("f7MCAXWYuNaRlLXkbbciOLGoaQzSXqNInlOJ60JC", "72lJ8dvBy8p6kfyrbhucntRvpKhR7Sh5oALeMATu");
 
 	$('#send_request').click(function () {
-		if ($('#email').val().match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/)) {			
+		if (  ($('#email').val().match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/)) && ($('#price_max').val() != '') && ($('#check_in').val() != '') && ($('#check_out').val() != '') ) {			
 			
 			var Request = Parse.Object.extend("Request");
 			var request = new Request();
@@ -132,6 +132,6 @@ $(document).ready(function() {
 				}
 			});				
 		}
-		else {alert("Debe introducir un email correcto.");}	  
+		else {alert("Debe introducir correctamente los campos obligatorios.");}	  
 	});
 });

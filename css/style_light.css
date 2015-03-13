@@ -517,8 +517,7 @@ section {
 
 .newsletter input {
     height: 62px;
-    width: 500px;
-    padding: 20px;
+    width: 500px;    
     background: none;
     color: #fff;
     border-radius: 3px;
@@ -805,4 +804,11 @@ padding: 5px 15px;
 .form-control[readonly], fieldset[disabled] .form-control {
   cursor: pointer;
   background: none;  
+}
+.legend {
+    font-size: 14px;
+    font-weight: 300;
+	color: #FFF;
+    line-height: 0.5em;
+    margin-bottom: 0px;
 }

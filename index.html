@@ -151,14 +151,14 @@
 					<div class="col-sm-6 col-md-3 margin-vy">
 						<label class="sr-only">Número personas</label>
 						<div class="input-group">
-							<div class="input-group-addon">Nº Personas</div>
+							<div class="input-group-addon">Nº Personas *</div>
 							<input type="number" min="0" class="form-control" id="num_guests" value="2">
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-3 margin-vy">
 						<label class="sr-only">Precio máximo de la estancia (en euros)</label>
 						<div class="input-group">
-							<div class="input-group-addon">Precio máximo</div>
+							<div class="input-group-addon">Precio máximo **</div>
 							<input type="text" min="0" class="form-control" id="price_max">
 							<div class="input-group-addon">&euro;</div>
 						</div>
@@ -166,14 +166,14 @@
 					<div class="col-md-3 margin-vy">
 						<label class="sr-only">Fecha de entrada</label>
 						<div class="input-group">
-							<div class="input-group-addon">Fecha Llegada</div>
+							<div class="input-group-addon">Fecha Llegada *</div>
 							<input type="text" class="form-control" data-date-format="dd-mm-yyyy" id="check_in" readonly="readonly">
 						</div>
 					</div>
 					<div class="col-md-3 margin-vy">
 						<label class="sr-only">Fecha de salida</label>
 						<div class="input-group">
-							<div class="input-group-addon">Fecha Salida</div>
+							<div class="input-group-addon">Fecha Salida *</div>
 							<input type="text" class="form-control" data-date-format="dd-mm-yyyy" id="check_out" readonly="readonly">
 						</div>
 					</div>
@@ -198,6 +198,7 @@
 						<button type="button" class="submit btn btn-send" id="send_request" value="Recibir Ofertas!">Recibir Ofertas!</button>
 					</div>
 				</div>
+				<p class="legend">* Campo obligatorio ** Precio máximo por habitación y noche.</p>
 		</form>
 		<div class="text-center" id="on_submit_message">
       En un plazo inferior a 3 días recibirás un correo con las ofertas de los mejores hoteles de Sevilla.
