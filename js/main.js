@@ -123,7 +123,7 @@ $(document).ready(function() {
 			}, {
 				success: function(object) {
 					if (typeof ga !== 'undefined') {
-						ga('send', 'event', 'Requat', 'submitted');
+						ga('send', 'event', 'Request', 'submitted');
 					}
 				  // Change to message
 				  $("#contact_form").hide();
