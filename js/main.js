@@ -109,8 +109,8 @@ $(document).ready(function() {
 	Parse.initialize("f7MCAXWYuNaRlLXkbbciOLGoaQzSXqNInlOJ60JC", "72lJ8dvBy8p6kfyrbhucntRvpKhR7Sh5oALeMATu");
 
 	$('#send_request').click(function () {
-		if (  ($('#email').val().match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/)) && ($('#price_max').val() != '') && ($('#check_in').val() != '') && ($('#check_out').val() != '') ) {			
-			
+		if (  ($('#email').val().match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/)) && ($('#price_max').val() != '') && ($('#check_in').val() != '') && ($('#check_out').val() != '') ) {
+
 			var Request = Parse.Object.extend("Request");
 			var request = new Request();
 			request.save({
@@ -122,6 +122,9 @@ $(document).ready(function() {
 			   email: $('#email').val()
 			}, {
 				success: function(object) {
+					if (typeof ga !== 'undefined') {
+						ga('send', 'event', 'Requat', 'submitted');
+					}
 				  // Change to message
 				  $("#contact_form").hide();
 				  $("#on_submit_message").show();
@@ -130,8 +133,8 @@ $(document).ready(function() {
 					console.log(error);
 				alert("Error sending data to backend");
 				}
-			});				
+			});
 		}
-		else {alert("Debe introducir correctamente los campos obligatorios.");}	  
+		else {alert("Debe introducir correctamente los campos obligatorios.");}
 	});
 });
