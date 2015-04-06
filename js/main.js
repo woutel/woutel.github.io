@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 	var checkin = $('#check_in').datepicker({
 	  onRender: function(date) {
-		return date.valueOf() < now.valueOf() ? 'disabled' : '';
+		return date.valueOf() < (now.valueOf()+259200000) ? 'disabled' : '';
 	  }
 	}).on('changeDate', function(ev) {
 	  if (ev.date.valueOf() > checkout.date.valueOf()) {
