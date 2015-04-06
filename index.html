@@ -51,9 +51,9 @@
 <!-- Google Font -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
-<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
 <!-- Start of Woutel Zendesk Widget script -->
@@ -88,58 +88,58 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Menu</span>
-				<span>Menu</span>
-			</button>
-			<!-- begin logo in navigation -->
-			<a class="navbar-brand" href="#intro">
-				<img src="images/woutel-logo-horizontal.png" class="logo-brand" alt="logo small">
-			</a>
-			<!-- end logo in navigation -->
-		</div>
-
-		<div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav pull-right">
-				<!-- begin navigation items -->
-				<li class="current"><a href="#intro">Inicio</a></li>
-				<li><a href="#services">Sobre Woutel</a></li>
-				<li><a href="#features">¿Cómo funciona?</a></li>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Menu</span>
+				<span>Menu</span>
+			</button>
+			<!-- begin logo in navigation -->
+			<a class="navbar-brand" href="#intro">
+				<img src="images/woutel-logo-horizontal.png" class="logo-brand" alt="logo small">
+			</a>
+			<!-- end logo in navigation -->
+		</div>
 
-				<!-- end navigation items -->
-			</ul>
-		</div>
-	</div>
-</nav>
-<!-- end nav -->
-
-<!-- begin intro section -->
-<section class="intro" id="intro">
-  <div class="intro-alpha">
-	<div class="container">
-		<div class="row">
-
-			<div class="col-md-12">
-				<div class="intro-section">
-					<!-- begin logo intro section -->
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav pull-right">
+				<!-- begin navigation items -->
+				<li class="current"><a href="#intro">Inicio</a></li>
+				<li><a href="#services">Sobre Woutel</a></li>
+				<li><a href="#features">¿Cómo funciona?</a></li>
+
+				<!-- end navigation items -->
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- end nav -->
+
+<!-- begin intro section -->
+<section class="intro" id="intro">
+  <div class="intro-alpha">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12">
+				<div class="intro-section">
+					<!-- begin logo intro section -->
 					<img src="images/woutel-logo.png" alt="logo">
-					<!-- end logo intro section -->
+					<!-- end logo intro section -->
 					<h1>Donde los mejores hoteles de <strong>Sevilla</strong> te encuentran</h1>
 
-					<!-- <a href="#" class="mouse">
-						<i class="fa fa-angle-down Drop animated"></i>
+					<!-- <a href="#" class="mouse">
+						<i class="fa fa-angle-down Drop animated"></i>
 					</a> -->
-
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<span class="mouse"></span>
-</div>
-</section>
-<!-- end intro section -->
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<span class="mouse"></span>
+</div>
+</section>
+<!-- end intro section -->
 
 <!-- begin newsletter section -->
 <section class="newsletter" id="newsletter">
@@ -148,21 +148,6 @@
 
 			<!-- <fieldset> -->
 				<div class="row">
-					<div class="col-sm-6 col-md-3 margin-vy">
-						<label class="sr-only">Número personas</label>
-						<div class="input-group">
-							<div class="input-group-addon">Nº Personas *</div>
-							<input type="number" min="0" class="form-control" id="num_guests" value="2">
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3 margin-vy">
-						<label class="sr-only">Precio máximo de la estancia (en euros)</label>
-						<div class="input-group">
-							<div class="input-group-addon">Precio máximo **</div>
-							<input type="text" min="0" class="form-control" id="price_max">
-							<div class="input-group-addon">&euro;</div>
-						</div>
-					</div>
 					<div class="col-md-3 margin-vy">
 						<label class="sr-only">Fecha de entrada</label>
 						<div class="input-group">
@@ -176,17 +161,21 @@
 							<div class="input-group-addon">Fecha Salida *</div>
 							<input type="text" class="form-control" data-date-format="dd-mm-yyyy" id="check_out" readonly="readonly">
 						</div>
-					</div>
+					</div>					
+					<div class="col-md-6 margin-vy">
+						<label class="sr-only">Presupuesto total máximo para la estancia (en euros)</label>
+						<div class="input-group">
+							<div class="input-group-addon">
+								<span class="hidden-xs">Presupuesto total máximo para la estancia *</span>
+								<span class="visible-xs">Presupuesto total máximo *</span>
+							</div>
+							<input type="text" min="0" class="form-control" id="price_max">
+							<div class="input-group-addon">&euro;</div>
+						</div>
+					</div>					
 				</div>
 			<!-- </fieldset> -->
-				<div class="row">
-					<div class="col-md-6 margin-vy">
-						<label class="sr-only">Comentario</label>
-						<div class="input-group">
-							<div class="input-group-addon">Comentario</div>
-							<input type="text" class="form-control" id="comment" placeholder="Ejemplo: WiFi en la habitación y desayuno incluido">
-						</div>
-					</div>
+				<div class="row">					
 					<div class="col-md-3 margin-vy">
 						<label class="sr-only">Tu email</label>
 						<div class="input-group">
@@ -194,11 +183,87 @@
 							<input type="text" class="form-control" id="email" placeholder="solofertas@woutel.com" required>
 						</div>
 					</div>
+					<div class="col-md-9 margin-vy">
+						<label class="sr-only">Huéspedes</label>
+						<div id="input_group_guests" class="input-group">
+							<div id="input_group_addon_guests" class="input-group-addon">Huéspedes</div>						
+							<!--  -->
+									<div id="initial_select">
+	
+										<select id="select_guests" class="selector">
+												<option value="0">2 Adultos, 1 habitación, 0 niños.</option>
+												<option value="1">Otras opciones</option>				
+										</select>
+									</div>
+									<div id="selected_guests_other" style="display: none;padding:15px;color:#FFF;line-height:2;">
+									Habitaciones
+										<span class="select-pad">
+										<select id="select_rooms">			
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+										</span>
+									Adultos
+										<span class="select-pad">
+										<select id="select_people">			
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+										</span><span class="visible-xs-inline"><br /></span>
+									<span class="display:inline-box;">Niños
+										<span class="select-pad">
+										<select id="select_children">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>		
+										</span></span>
+										<div id="wrap_children" style="display: none;">		
+											Edades de los niños
+											<div id="children"></div>						
+										</div> 
+									</div>
+							<!--  -->
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-9 margin-vy">
+						<label class="sr-only">Comentario</label>
+						<div class="input-group">
+							<div class="input-group-addon">Comentario</div>
+							<input type="text" class="form-control" id="comment" placeholder="Ejemplo: WiFi en la habitación y desayuno incluido">
+						</div>
+					</div>					
 					<div class="col-md-2 margin-vy">
 						<button type="button" class="submit btn btn-send" id="send_request" value="Recibir Ofertas!">Recibir Ofertas!</button>
 					</div>
 				</div>
-				<p class="legend">* Campo obligatorio ** Precio máximo por habitación y noche.</p>
+				<p class="legend">* Campo obligatorio</p>
 		</form>
 		<div class="text-center" id="on_submit_message">
       En un plazo inferior a 3 días recibirás un correo con las ofertas de los mejores hoteles de Sevilla.
@@ -278,73 +343,73 @@
 
 
 
-<!-- begin features section -->
-<section class="features" id="features">
-
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="section-head wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
-					<h1>¿Cómo funciona Woutel?</h1>
-					<p>Nunca fue tan fácil tener el mejor precio</p>
-					<span class="underline"></span>
-				</div>
-			</div>
-		</div>
-
+<!-- begin features section -->
+<section class="features" id="features">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-head wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+					<h1>¿Cómo funciona Woutel?</h1>
+					<p>Nunca fue tan fácil tener el mejor precio</p>
+					<span class="underline"></span>
+				</div>
+			</div>
+		</div>
+
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3"><!-- features-right -->
-				<div class="wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-
-					<!-- begin single feature item -->
-					<div class="feature">
-						<div class="icon-container">
-							<div class="icon">
+				<div class="wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+					<!-- begin single feature item -->
+					<div class="feature">
+						<div class="icon-container">
+							<div class="icon">
 							1
-							</div>
-						</div>
-
-						<div class="fetaure-details">
+							</div>
+						</div>
+
+						<div class="fetaure-details">
 							<h4 class="main-color">Dínos lo que buscas</h4>
 							<p>Haznos saber tus necesidades e intereses para encontrar <b>tus ofertas personalizadas</b>.
 							</p>
 						</div>
 					</div>
-					<!-- end single feature item -->
-
-					<!-- begin single feature item -->
-					<div class="feature">
-						<div class="icon-container">
-							<div class="icon">
+					<!-- end single feature item -->
+
+					<!-- begin single feature item -->
+					<div class="feature">
+						<div class="icon-container">
+							<div class="icon">
 							2
-							</div>
-						</div>
-
-						<div class="fetaure-details">
-							<h4 class="main-color">Recibe cómodamente tus ofertas</h4>
+							</div>
+						</div>
+
+						<div class="fetaure-details">
+							<h4 class="main-color">Recibe cómodamente tus ofertas</h4>
 							<p>En 72 horas recibirás en <strong>un único email</strong> todas las ofertas de hoteles que se ajustan a tus requisitos.
 							</p>
 						</div>
 					</div>
-					<!-- end single feature item -->
-
-					<!-- begin single feature item -->
-					<div class="feature">
-						<div class="icon-container">
-							<div class="icon">
+					<!-- end single feature item -->
+
+					<!-- begin single feature item -->
+					<div class="feature">
+						<div class="icon-container">
+							<div class="icon">
 							3
-							</div>
-						</div>
-
-						<div class="fetaure-details">
+							</div>
+						</div>
+
+						<div class="fetaure-details">
 							<h4 class="main-color">Elige y reserva con el hotel</h4>
 							<p>Eliges la mejor oferta y podrás cerrar directamente la <strong>reserva con el hotel</strong>.
 							</p>
 						</div>
 					</div>
-					<!-- end single feature item -->
-				</div>
-			</div>
+					<!-- end single feature item -->
+				</div>
+			</div>
 		</div>
 
 	</div>
@@ -461,82 +526,82 @@
 			</div>
 
 		</div>
-	</div>
-</section>
+	</div>
+</section>
 
 <div class="divider"></div>
 
-<!-- begin footer section -->
-<footer class="footer" id="footer">
-	<div class="container">
-		<div class="row wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-			<div class="col-md-3 col-sm-3">
-				<!-- begin logo footer -->
-				<img src="images/woutel-logo-footer.png" alt="Logo Woutel">
-				<!-- end logo footer -->
+<!-- begin footer section -->
+<footer class="footer" id="footer">
+	<div class="container">
+		<div class="row wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div class="col-md-3 col-sm-3">
+				<!-- begin logo footer -->
+				<img src="images/woutel-logo-footer.png" alt="Logo Woutel">
+				<!-- end logo footer -->
 				<p>Donde los mejores hoteles de <strong>Sevilla</strong> te encuentran.
 				</p>
 			</div>
 
-			<div class="col-md-2 col-md-offset-1 col-sm-3">
-				<h4>Woutel</h4>
-				<div class="underline-small"></div>
-				<ul>
+			<div class="col-md-2 col-md-offset-1 col-sm-3">
+				<h4>Woutel</h4>
+				<div class="underline-small"></div>
+				<ul>
 					<li>
 						<a href="terminos.html"><i class="fa fa-file-text"> </i> Términos y Condiciones</a>
 					</li>
-				</ul>
-			</div>
-
-			<div class="col-md-2 col-md-offset-1 col-sm-3">
-				<h4>Contacto</h4>
-				<div class="underline-small"></div>
-				<ul>
+				</ul>
+			</div>
+
+			<div class="col-md-2 col-md-offset-1 col-sm-3">
+				<h4>Contacto</h4>
+				<div class="underline-small"></div>
+				<ul>
 					<li><i class="fa fa-phone"> </i> <a href="tel:+34678717319">678 717 319</a></li>
 					<li><i class="fa fa-comments-o"> </i> <a href="javascript:void($zopim.livechat.window.openPopout())">Live Chat</a></li>
 					<li><i class="fa fa-envelope-o"> </i> info@woutel.com</li>					
-				</ul>
-			</div>
-
-			<div class="col-md-2 col-md-offset-1 col-sm-3">
-				<h4>Social</h4>
-				<div class="underline-small"></div>
-				<ul class="list-inline">
-					<li>
-						<a href="https://www.facebook.com/woutel?ref=hl"><i class="fa fa-facebook"></i></a>
-					</li>
-					<li>
-						<a href="https://twitter.com/woutelcom"><i class="fa fa-twitter"></i></a>
+				</ul>
+			</div>
+
+			<div class="col-md-2 col-md-offset-1 col-sm-3">
+				<h4>Social</h4>
+				<div class="underline-small"></div>
+				<ul class="list-inline">
+					<li>
+						<a href="https://www.facebook.com/woutel?ref=hl"><i class="fa fa-facebook"></i></a>
 					</li>
-				</ul>
-			</div>
-
-		</div>
-
-		<div class="row wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-			<div class="col-md-12 text-center">
-				<p><small>&copy; Copyright Woutel 2015</small></p>
-			</div>
-		</div>
-
-	</div>
-</footer>
-<!-- end footer section -->
-
-<!-- Javascripts -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.fitvids.js"></script>
-<script src="js/smoothScroll.js"></script>
-<script src="js/nivo-lightbox.min.js"></script>
-<script src="js/jquery.scrollTo.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/jquery.jigowatt.js"></script>
+					<li>
+						<a href="https://twitter.com/woutelcom"><i class="fa fa-twitter"></i></a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="row wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div class="col-md-12 text-center">
+				<p><small>&copy; Copyright Woutel 2015</small></p>
+			</div>
+		</div>
+
+	</div>
+</footer>
+<!-- end footer section -->
+
+<!-- Javascripts -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/smoothScroll.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.jigowatt.js"></script>
 <script src="js/bootstrap-datepicker.js"></script>
 
-<!-- Custom Javascript -->
-<script src="js/main.js"></script><script src="http://www.parsecdn.com/js/parse-1.3.5.min.js"></script>
-</body>
+<!-- Custom Javascript -->
+<script src="js/main.js"></script><script src="http://www.parsecdn.com/js/parse-1.3.5.min.js"></script>
+</body>
 </html>
