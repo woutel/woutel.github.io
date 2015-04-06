@@ -1,78 +1,78 @@
-.nav-tabs>li>a:hover {
-	background-color: #158D9F;
-	border-color: #158D9F;
-}
-
-.nav-tabs>li.active>a, 
-.nav-tabs>li.active>a:hover, 
-.nav-tabs>li.active>a:focus {
-    background-color: #0088cc;
-    border: 1px solid #0088cc;
-}
-
-.btn-custom {
-    border-color: #158D9F;
-    background-color: #158D9F;
-}
-
-.btn-custom-border {
-    background: transparent;
-    border-color: #158D9F;
-    color: #ffffff;
-}
-
-.features .feature .icon-container .icon {
-    border: 1px solid #158D9F;
-}
-
-.btn-send,
-.newsletter input {
-    border: 1px solid #ffffff;
-}
-
-.btn-send:hover,
-.btn-send:active,
-.btn-custom:hover,
-.btn-custom-border:hover,
-.btn-slide:hover,
-.navbar-default .navbar-toggle,
-.navbar-default .navbar-toggle:hover, 
-.navbar-default .navbar-toggle:focus,
-.navbar-toggle {
-    background-color: #0088cc;
-    border-color: #0088cc;
-}
-
-.btn-slide,
-.features .feature:hover .icon-container .icon,
-.footer span.jobs {
-    background-color: #158D9F;
-}
-
-
-.underline {
-	border-top: 4px solid #158D9F;
-}
-
-.underline-small {
-    border-top: 2px solid #158D9F;
-}
-
-
-.navbar-default .navbar-nav>li>a:hover, 
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-nav>li.current a,
-.features .feature .icon-container .icon,
-.service i,
-.service:hover h4,
-.screens .screen .hover-screen i:hover,
-.packages .package.featured .package-name,
-ul.extra-features i,
-.footer a:hover,
-.footer i:hover {
-    color: #158D9F;
-}
-
-.footer span.jobs:after {
-	border-right-color: #158D9F;
-}
+.nav-tabs>li>a:hover {
+	background-color: #158D9F;
+	border-color: #158D9F;
+}
+
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:hover, 
+.nav-tabs>li.active>a:focus {
+    background-color: #0088cc;
+    border: 1px solid #0088cc;
+}
+
+.btn-custom {
+    border-color: #158D9F;
+    background-color: #158D9F;
+}
+
+.btn-custom-border {
+    background: transparent;
+    border-color: #158D9F;
+    color: #ffffff;
+}
+
+.features .feature .icon-container .icon {
+    border: 1px solid #158D9F;
+}
+
+.btn-send,
+.newsletter input {
+    border: 1px solid #ffffff;
+}
+
+.btn-send:hover,
+.btn-send:active,
+.btn-custom:hover,
+.btn-custom-border:hover,
+.btn-slide:hover,
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus,
+.navbar-toggle {
+    background-color: #0088cc;
+    border-color: #0088cc;
+}
+
+.btn-slide,
+.features .feature:hover .icon-container .icon,
+.footer span.jobs {
+    background-color: #158D9F;
+}
+
+
+.underline {
+	border-top: 4px solid #158D9F;
+}
+
+.underline-small {
+    border-top: 2px solid #158D9F;
+}
+
+
+.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-nav>li.current a,
+.features .feature .icon-container .icon,
+.service i,
+.service:hover h4,
+.screens .screen .hover-screen i:hover,
+.packages .package.featured .package-name,
+ul.extra-features i,
+.footer a:hover,
+.footer i:hover {
+    color: #158D9F;
+}
+
+.footer span.jobs:after {
+	border-right-color: #158D9F;
+}
