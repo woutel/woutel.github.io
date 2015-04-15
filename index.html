@@ -56,9 +56,15 @@
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<!-- Start of Woutel Zendesk Widget script -->
-<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("http://assets.zendesk.com/embeddable_framework/main.js","woutelhelp.zendesk.com");/*]]>*/</script>
-<!-- End of Woutel Zendesk Widget script -->
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="//v2.zopim.com/?2vOe0kLVqekDfHJwngZsH3BAVjTWb5ap";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zopim Live Chat Script-->
 
 </head>
 
@@ -85,7 +91,7 @@
 <!-- end preloader -->
 
 <!-- begin nav -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top vy-newnav fixednav" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -100,7 +106,7 @@
 		</div>
 
 		<div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav pull-right">
+			<ul class="nav navbar-nav pull-right vy-framenav">
 				<!-- begin navigation items -->
 				<li class="current"><a href="#intro">Inicio</a></li>
 				<li><a href="#services">Sobre Woutel</a></li>
@@ -120,11 +126,8 @@
 		<div class="row">
 
 			<div class="col-md-12">
-				<div class="intro-section">
-					<!-- begin logo intro section -->
-					<img src="images/woutel-logo.png" alt="logo">
-					<!-- end logo intro section -->
-					<h1>Donde los mejores hoteles de <strong>Sevilla</strong> te encuentran</h1>
+				<div class="intro-section">					
+					<h1 class="slogan">Donde los mejores hoteles de <strong>Sevilla</strong> te encuentran</h1>
 
 					<!-- <a href="#" class="mouse">
 						<i class="fa fa-angle-down Drop animated"></i>

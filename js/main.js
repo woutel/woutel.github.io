@@ -54,9 +54,7 @@ $(document).ready(function() {
 			$("#input_group_addon_guests").css({'border':'none'});
 			}	
 	});	
-	
-	
-	
+		
 	$('select#select_children').change(function(){
 	
 		var sel_value = $('#select_children option:selected').val();
@@ -101,12 +99,21 @@ function create(sel_value){
 	});
 
 	// Fixed navigation
+	$(window).on("resize load", function () {
+		if ($(document).width() < 768) {	        
+				$('.navbar').removeClass('vy-newnav');			
+			} else {	    	
+				$('.navbar').addClass('vy-newnav');			
+			}
+	});
 	$(window).scroll(function() {
-	    if ($(window).scrollTop() > 500) {
-	        $('.navbar').addClass('fixednav');
-	    } else {
-	    	$('.navbar').removeClass('fixednav');
-	    }
+	    if ($(window).scrollTop() > 300) {			
+			$('.navbar').addClass('fixednav').removeClass('vy-newnav');			
+	    } else {	    	
+			if ($(document).width() > 768) {        
+				$('.navbar').removeClass('fixednav').addClass('vy-newnav fixednav');				
+			}					
+	    }		
 	});
 
 	// Initiat onepageNav.js

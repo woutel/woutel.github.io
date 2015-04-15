@@ -172,7 +172,7 @@ figure img {
 
 /* Heading Sizes */
 
-h1 {
+h1 {	
     font-size: 52px;
     font-weight: 400;
 }
@@ -360,6 +360,7 @@ section {
 
     .intro .intro-section {
         max-width: 675px;
+		min-height: 498px;
         padding: 50px 0 80px 0;
         margin: 0 auto;
         text-align: center;
@@ -821,3 +822,22 @@ padding: 5px 15px;
 }
 .select-pad{padding:0px 10px;}
 .services{background:#eee;}
+.vy-newnav{
+	background: none !important;
+	color: #FFF !important;
+	-webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15); 
+
+}
+.vy-framenav{
+	 margin-top: 10px;
+	border: 2px solid #fff;
+	border-radius: 20px;
+}
+.vy-newnav .navbar-nav>li>a{
+	color: #FFF !important;
+	padding-top:20px !important;
+	padding-bottom:20px !important;
+}
+.slogan{margin-top:170px;}
