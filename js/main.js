@@ -33,11 +33,11 @@ $(document).ready(function() {
 	///
 
 	$('select#select_guests').change(function(){
-	
+
 		var sel_value = $('option:selected').val();
 		if(sel_value==0)
 		{
-			//Resetting Form 
+			//Resetting Form
 			//$("#form_submit").empty();
 			$("#selected_guests_other").css({'display':'none'});
 			$("#input_group_guests").css({'border':'none'});
@@ -46,37 +46,37 @@ $(document).ready(function() {
 			$("#input_group_addon_guests").css({'border-right':'none'});
 		}
 		else{
-			//Resetting Form 
+			//Resetting Form
 			//$("#form_submit").empty();
 			$("div#selected_guests_other").slideDown('slow');
 			$("#input_group_guests").css({'border':'1px solid #FFF','border-radius':'3px'});
 			$("#select_guests").css({'border':'none'});
 			$("#input_group_addon_guests").css({'border':'none'});
-			}	
-	});	
-		
+			}
+	});
+
 	$('select#select_children').change(function(){
-	
+
 		var sel_value = $('#select_children option:selected').val();
 		if(sel_value==0)
 		{
-			//Resetting Form 
+			//Resetting Form
 			$("#children").empty();
 			$("#wrap_children").css({'display':'none'});
 		}
 		else{
-			//Resetting Form 
-			$("#children").empty();		
+			//Resetting Form
+			$("#children").empty();
 			$("div#wrap_children").slideDown('fast');
 			//
-			create(sel_value);						
-			}	
-	});	
-	
-function create(sel_value){	
-	for(var i=1;i<=sel_value;i++){   	   
+			create(sel_value);
+			}
+	});
+
+function create(sel_value){
+	for(var i=1;i<=sel_value;i++){
 	    $("div#children").append(' <select class="" name="child' + i + '" id="child' + i + '"><option value="0" selected="selected">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select> ')
-    }	
+    }
 }
 	///
 	// Initiat WOW.js
@@ -100,20 +100,20 @@ function create(sel_value){
 
 	// Fixed navigation
 	$(window).on("resize load", function () {
-		if ($(document).width() < 768) {	        
-				$('.navbar').removeClass('vy-newnav');			
-			} else {	    	
-				$('.navbar').addClass('vy-newnav');			
+		if ($(document).width() < 768) {
+				$('.navbar').removeClass('vy-newnav');
+			} else {
+				$('.navbar').addClass('vy-newnav');
 			}
 	});
 	$(window).scroll(function() {
-	    if ($(window).scrollTop() > 300) {			
-			$('.navbar').addClass('fixednav').removeClass('vy-newnav');			
-	    } else {	    	
-			if ($(document).width() > 768) {        
-				$('.navbar').removeClass('fixednav').addClass('vy-newnav fixednav');				
-			}					
-	    }		
+	    if ($(window).scrollTop() > 300) {
+			$('.navbar').addClass('fixednav').removeClass('vy-newnav');
+	    } else {
+			if ($(document).width() > 768) {
+				$('.navbar').removeClass('fixednav').addClass('vy-newnav fixednav');
+			}
+	    }
 	});
 
 	// Initiat onepageNav.js
@@ -162,7 +162,7 @@ function create(sel_value){
 	Parse.initialize("f7MCAXWYuNaRlLXkbbciOLGoaQzSXqNInlOJ60JC", "72lJ8dvBy8p6kfyrbhucntRvpKhR7Sh5oALeMATu");
 
 	$('#send_request').click(function () {
-		if (  ($('#email').val().match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/)) && ($('#price_max').val() != '') && ($('#check_in').val() != '') && ($('#check_out').val() != '') ) {			
+		if (  ($('#email').val().match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/)) && ($('#price_max').val() != '') && ($('#check_in').val() != '') && ($('#check_out').val() != '') ) {
 
 			if ($('#select_guests').val() == '1'){
 				var n_rooms = $('#select_rooms').val();
@@ -170,15 +170,15 @@ function create(sel_value){
 				n_guests = String(n_guests);
 				var children = $('#select_children').val();
 				var children_ages = '';
-				for(var i=1;i<=children;i++){  
-					children_ages += ',' + $('#child' + i).val();					
-				}				
-				(children != '0') ? children = children + ':' + children_ages.substring(1) : children = '0';				
+				for(var i=1;i<=children;i++){
+					children_ages += ',' + $('#child' + i).val();
+				}
+				(children != '0') ? children = children + ':' + children_ages.substring(1) : children = '0';
 			}else{
 				var n_rooms = '1';
 				var n_guests = '2';
 				var children = '0';
-			}			
+			}
 			//alert(num_rooms + '.' + num_guests + '.' + children);
 			var Request = Parse.Object.extend("Request");
 			var request = new Request();
@@ -194,7 +194,7 @@ function create(sel_value){
 			}, {
 				success: function(object) {
 					if (typeof ga !== 'undefined') {
-						ga('send', 'event', 'Request', 'submitted');
+						ga('GAWOUTEL.send', 'event', 'Request', 'submitted');
 					}
 				  // Change to message
 				  $("#contact_form").hide();
@@ -204,8 +204,8 @@ function create(sel_value){
 					console.log(error);
 				alert("Error sending data to backend");
 				}
-			});			
+			});
 		}
-		else {alert("Debe introducir correctamente los campos obligatorios.");}	  
+		else {alert("Debe introducir correctamente los campos obligatorios.");}
 	});
 });
