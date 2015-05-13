@@ -161,7 +161,7 @@ function create(sel_value){
 	});
 	Parse.initialize("f7MCAXWYuNaRlLXkbbciOLGoaQzSXqNInlOJ60JC", "72lJ8dvBy8p6kfyrbhucntRvpKhR7Sh5oALeMATu");
 
-	$('#send_request').click(function () {
+	$('#send_request').click(function () {		
 		if (  ($('#email').val().match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/)) && ($('#price_max').val() != '') && ($('#check_in').val() != '') && ($('#check_out').val() != '') ) {
 
 			if ($('#select_guests').val() == '1'){
@@ -197,14 +197,15 @@ function create(sel_value){
 						ga('GAWOUTEL.send', 'event', 'Request', 'submitted');
 					}
 				  // Change to message
-				  $("#contact_form").hide();
-				  $("#on_submit_message").show();
+				  //$("#contact_form").hide();
+				  //$("#on_submit_message").show();
+				  window.location.href = "http://www.woutel.com/enviado.html";
 				},
 				error: function(model, error) {
 					console.log(error);
 				alert("Error sending data to backend");
 				}
-			});
+			});			
 		}
 		else {alert("Debe introducir correctamente los campos obligatorios.");}
 	});
