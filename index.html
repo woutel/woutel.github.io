@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Woutel - Your key to personalized reservations">
 <meta name="author" content="Vypra">
+<link rel="alternate" media="only screen and (max-width: 940px)" href="http://www.woutel.com/mobile.html" >
 
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary">
@@ -42,8 +43,9 @@
 <link rel="stylesheet" href="css/datepicker.css">
 
 <!-- Main Stylsheets -->
-<link rel="stylesheet" href="css/style_light.css">
 <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/style_light.css">
+
 
 <!-- Color Sheme CSS -->
 <link rel="stylesheet" href="css/color.css">
@@ -66,6 +68,33 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 </script>
 <!--End of Zopim Live Chat Script-->
 
+<script type="text/javascript"> // <![CDATA[
+	var isMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+
+    };
+	if ( isMobile.any() ) {
+        document.location.href = "mobile.html";
+    }	
+	// ]]>
+</script>
 </head>
 
 <body>
@@ -147,6 +176,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!-- begin newsletter section -->
 <section class="newsletter" id="newsletter">
   <div class="container">
+  <h2 style="margin-bottom:30px;color:#FFF;">Recibe tus ofertas</h2>
 	   <form method="post" name="contact_form" id="contact_form">
 
 			<!-- <fieldset> -->
@@ -154,14 +184,14 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					<div class="col-md-3 margin-vy">
 						<label class="sr-only">Fecha de entrada</label>
 						<div class="input-group">
-							<div class="input-group-addon">Fecha Llegada *</div>
+							<div class="input-group-addon">Fecha Llegada</div>
 							<input type="text" class="form-control" data-date-format="dd-mm-yyyy" id="check_in" readonly="readonly">
 						</div>
 					</div>
 					<div class="col-md-3 margin-vy">
 						<label class="sr-only">Fecha de salida</label>
 						<div class="input-group">
-							<div class="input-group-addon">Fecha Salida *</div>
+							<div class="input-group-addon">Fecha Salida</div>
 							<input type="text" class="form-control" data-date-format="dd-mm-yyyy" id="check_out" readonly="readonly">
 						</div>
 					</div>
@@ -169,8 +199,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 						<label class="sr-only">Presupuesto total máximo para la estancia (en euros)</label>
 						<div class="input-group">
 							<div class="input-group-addon">
-								<span class="hidden-xs">Presupuesto total máximo para la estancia *</span>
-								<span class="visible-xs">Presupuesto total máximo *</span>
+								<span class="hidden-xs">Presupuesto total máximo para la estancia</span>
+								<span class="visible-xs">Presupuesto total máximo</span>
 							</div>
 							<input type="text" min="0" class="form-control" id="price_max">
 							<div class="input-group-addon">&euro;</div>
@@ -182,7 +212,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					<div class="col-md-3 margin-vy">
 						<label class="sr-only">Tu email</label>
 						<div class="input-group">
-							<div class="input-group-addon">Tu email *</div>
+							<div class="input-group-addon">Tu email</div>
 							<input type="text" class="form-control" id="email" placeholder="solofertas@woutel.com" required>
 						</div>
 					</div>
@@ -265,8 +295,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					<div class="col-md-2 margin-vy">
 						<button type="button" class="submit btn btn-send" id="send_request" value="Recibir Ofertas!">Recibir Ofertas!</button>
 					</div>
-				</div>
-				<p class="legend">* Campo obligatorio</p>
+				</div>				
 		</form>		
 	</div><!-- /container -->
 </section>
@@ -500,7 +529,36 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 				</div>
 
 				<!-- end single testomial item -->
+				<!-- begin single testomial item -->
+				<div class="testemonial">
 
+					<div class="col-md-5 client-data">
+
+						<div class="client-image">
+
+							<img src="images/gloria.png" alt="cliente">
+
+						</div>
+
+						<div class="client-name">
+
+							<h4>Gloria</h4>
+
+							<p>Usuaria hotel en Sevilla</p>
+
+						</div>
+
+					</div>
+
+					<div class="col-md-7 col-sm-12">
+
+						<div class="client-quote">
+
+							<p>"Supersatisfechos con la experiencia."</p>
+						</div>
+					</div>
+				</div>
+				<!-- end single testomial item -->
 			</div>
 
 		</div>
@@ -581,7 +639,6 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 <!-- Custom Javascript -->
 <script src="js/main.js"></script><script src="http://www.parsecdn.com/js/parse-1.3.5.min.js"></script>
-
 <!-- MouseFlow Javascript -->
 
     <script type="text/javascript">
