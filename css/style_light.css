@@ -244,7 +244,7 @@ h4 {
 
 /* Strokes */
 
-.underline {
+.underline, .underline-works {
     display: inline-block;
     width: 160px;
     height: 1px;
@@ -822,6 +822,7 @@ padding: 5px 15px;
 }
 .select-pad{padding:0px 10px;}
 .services{background:#eee;}
+.works{background:#158D9E;color: #FFF;}
 .vy-newnav{
 	background: none !important;
 	color: #FFF !important;
@@ -843,3 +844,7 @@ padding: 5px 15px;
 .slogan{margin-top:170px;}
 .slogan-mobile{padding:30px;text-align:center;}
 .logo-mobile{padding-top:30px;text-align:center;}
+.underline-works {
+  border-top: 4px solid #FFF;
+}
+.works h4{margin-top:30px;}
