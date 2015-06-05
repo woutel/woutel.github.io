@@ -216,7 +216,7 @@ h4 {
 
 .btn-send {
     height: 62px;
-    margin: 0 0 0 5px;
+    margin: 0 0 0 0px;
     vertical-align: top;
 	background-color: #FFBB39;
     color: #0C6D80;
@@ -841,3 +841,5 @@ padding: 5px 15px;
 	padding-bottom:20px !important;
 }
 .slogan{margin-top:170px;}
+.slogan-mobile{padding:30px;text-align:center;}
+.logo-mobile{padding-top:30px;text-align:center;}
