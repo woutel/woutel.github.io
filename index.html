@@ -137,9 +137,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav pull-right vy-framenav">
 				<!-- begin navigation items -->
-				<li class="current"><a href="#intro">Inicio</a></li>
-				<li><a href="#services">Sobre Woutel</a></li>
-				<li><a href="#features">¿Cómo funciona?</a></li>
+				<li><a href="http://www.woutel.com">Inicio</a></li>
+				<li><a id="login" href="login.html">Mi Sesión</a></li>
 
 				<!-- end navigation items -->
 			</ul>
@@ -156,13 +155,13 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 			<div class="col-md-12">
 				<div class="intro-section">
-					<h1 class="slogan">Donde los mejores hoteles de <strong>Sevilla</strong> te encuentran</h1>
+					<h1 id ="slogan" class="slogan">Donde los mejores hoteles de <strong>Sevilla</strong> te encuentran</h1>
 
 					<!-- <a href="#" class="mouse">
 						<i class="fa fa-angle-down Drop animated"></i>
 					</a> -->
 
-				</div>
+				</div>				
 			</div>
 
 		</div>
@@ -173,9 +172,20 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 </section>
 <!-- end intro section -->
 
+<!-- begin iframe section -->
+
+<section class="vy-iframe" id="vy_iframe">	
+	<div id="iframe_container" class="container">
+		
+	</div>
+</section>
+
+<!-- end iframe section -->
+
 <!-- begin newsletter section -->
-<section class="newsletter" id="newsletter">
-  <div class="container">
+<section class="newsletter" id="newsletter">	
+	
+  <div class="container">  
   <h2 style="margin-bottom:30px;color:#FFF;">Recibe tus ofertas</h2>
 	   <form method="post" name="contact_form" id="contact_form">
 
@@ -349,7 +359,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!-- end services section -->
 
 <!-- begin services section -->
-<section class="services works" id="services">
+<section class="services works" id="services-works">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -605,7 +615,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <script src="js/bootstrap-datepicker.js"></script>
 
 <!-- Custom Javascript -->
-<script src="js/main.js"></script><script src="http://www.parsecdn.com/js/parse-1.3.5.min.js"></script>
+<script src="js/mainform.js"></script>
+<script src="http://www.parsecdn.com/js/parse-1.3.5.min.js"></script>
 <!-- MouseFlow Javascript -->
 
     <script type="text/javascript">
