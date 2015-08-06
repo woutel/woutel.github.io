@@ -848,3 +848,14 @@ padding: 5px 15px;
   border-top: 4px solid #FFF;
 }
 .works h4{margin-top:30px;}
+
+.btn-sesion{
+
+	/*position: relative;
+    float: right;*/
+    padding: 9px 10px;        
+    border: 1px solid transparent;
+    border-radius: 4px;
+	background-color: #158D9F;
+    border-color: #007885;
+}
