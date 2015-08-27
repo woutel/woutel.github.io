@@ -69,6 +69,15 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!--End of Zopim Live Chat Script-->
 
 <script type="text/javascript"> // <![CDATA[
+
+	var language = window.navigator.userLanguage || window.navigator.language;	
+	var lang = language.substring(0, 2);	
+	if ( lang != "es" ) {
+        document.location.href = "en/index.html";		
+    }
+	// ]]>
+</script>
+<script type="text/javascript"> // <![CDATA[
 	var isMobile = {
         Android: function() {
             return navigator.userAgent.match(/Android/i);
@@ -124,11 +133,11 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Menu</span>
-				<span>Menu</span>
+				<span class="sr-only">Menú</span>
+				<span>Menú</span>
 			</button>
 			<!-- begin logo in navigation -->
-			<a class="navbar-brand" href="#intro">
+			<a class="navbar-brand" href="http://www.woutel.com/">
 				<img src="images/woutel-logo-horizontal.png" class="logo-brand" alt="logo small">
 			</a>
 			<!-- end logo in navigation -->
@@ -137,8 +146,10 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav pull-right vy-framenav">
 				<!-- begin navigation items -->
-				<li><a href="http://www.woutel.com">Inicio</a></li>
+				<li><a id="home" href="http://www.woutel.com/">Inicio</a></li>
 				<li><a id="login" href="login.html">Mi Sesión</a></li>
+				<li><a id="hoteles" href="hoteles.html">Nuestros Hoteles</a></li>
+				<li><a href="http://www.woutel.com/en/"><img src="images/gb.png" width="24" height="24" border="0" ALT="English"></a></li>
 
 				<!-- end navigation items -->
 			</ul>
@@ -348,7 +359,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 				<div class="service wow fadeIn animated delay-long" data-wow-offset="10">
 					<i class="fa fa-support"></i>
 					<h4>Atención personalizada</h4>
-					<p>Queremos ayudarte en cualquier momento por chat, teléfono o email. Preferiblemente de 8:00 a 23:00.</p>
+					<p>Queremos ayudarte en cualquier momento por chat, teléfono o email. Preferiblemente de 9:00 a 21:00.</p>
 				</div>
 				<!-- end single service item -->
 			</div>
@@ -550,7 +561,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		<div class="row wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
 			<div class="col-md-3 col-sm-3">
 				<!-- begin logo footer -->
-				<img src="images/woutel-logo-footer.png" alt="Logo Woutel">
+				<a href="http://www.woutel.com"><img src="images/woutel-logo-footer.png" alt="Logo Woutel"></a>
 				<!-- end logo footer -->
 				<p>Donde los mejores hoteles de <strong>Sevilla</strong> te encuentran.
 				</p>

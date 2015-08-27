@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 
 <!-- Meta Data -->
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Woutel - Your key to personalized reservations">
 <meta name="author" content="Vypra">
-<link rel="canonical" href="http://www.woutel.com/" >
+<link rel="alternate" media="only screen and (max-width: 940px)" href="http://www.woutel.com/mobile.html" >
 
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary">
@@ -30,7 +30,7 @@
 <!-- Favicon -->
 <link rel="shortcut icon" href="images/favicon.ico">
 
-<title>Woutel - Donde los mejores hoteles de Sevilla te encuentran</title>
+<title>Woutel - Where the best hotels in Seville find you</title>
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -43,8 +43,9 @@
 <link rel="stylesheet" href="css/datepicker.css">
 
 <!-- Main Stylsheets -->
-<link rel="stylesheet" href="css/style_light.css">
 <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/style_light.css">
+
 
 <!-- Color Sheme CSS -->
 <link rel="stylesheet" href="css/color.css">
@@ -89,9 +90,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
         }
 
     };
-	if (!isMobile.any() ) {
-        document.location.href = "index.html";
-    }
+	if ( isMobile.any() ) {
+        document.location.href = "mobile.html";
+    }	
 	// ]]>
 </script>
 </head>
@@ -123,11 +124,11 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Menú</span>
-				<span>Menú</span>
+				<span class="sr-only">Menu</span>
+				<span>Menu</span>
 			</button>
 			<!-- begin logo in navigation -->
-			<a class="navbar-brand" href="http://www.woutel.com/">
+			<a class="navbar-brand" href="#intro">
 				<img src="images/woutel-logo-horizontal.png" class="logo-brand" alt="logo small">
 			</a>
 			<!-- end logo in navigation -->
@@ -136,10 +137,10 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav pull-right vy-framenav">
 				<!-- begin navigation items -->
-				<li><a id="home" href="http://www.woutel.com/">Inicio</a></li>
-				<li><a id="login" href="login.html">Mi Sesión</a></li>
-				<li><a id="hoteles" href="hoteles.html">Nuestros Hoteles</a></li>
-				<li><a href="http://www.woutel.com/en/"><img src="images/gb.png" width="24" height="24" border="0" ALT="English"></a></li>
+				<li><a href="http://www.woutel.com">Home</a></li>
+				<li><a id="login" href="login.html">Log In</a></li>
+				<li><a id="hoteles" href="hoteles.html">Our Hotels</a></li>
+				<li><a href="http://www.woutel.com"><img src="images/es.png" width="24" height="24" border="0" ALT="Español"></a></li>
 
 				<!-- end navigation items -->
 			</ul>
@@ -148,64 +149,30 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 </nav>
 <!-- end nav -->
 
-<div class="logo-mobile">
-	
-</div>
-
-<h1 class="slogan-mobile">Personaliza tu estancia en <strong>Sevilla</strong></h1>	
-
-<!-- begin features section -->
-<section class="features" id="features">
-
+<!-- begin intro section -->
+<section class="intro" id="intro">
+  <div class="intro-alpha">
 	<div class="container">
 		<div class="row">
+
 			<div class="col-md-12">
-				<div class="section-head wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
-					<h1>¿Cómo funciona Woutel?</h1>
-					<p>Nunca fue tan fácil tener el mejor precio</p>
-					<span class="underline"></span>
-				</div>
+				<div class="intro-section">
+					<h1 id ="slogan" class="slogan">Where the best hotels in <strong>Seville</strong> find you</h1>
+
+					<!-- <a href="#" class="mouse">
+						<i class="fa fa-angle-down Drop animated"></i>
+					</a> -->
+
+				</div>				
 			</div>
-		</div>
 
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3"><!-- features-right -->
-				<div class="wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-
-					<!-- begin single feature item -->
-					<div class="feature">						
-						<div class="fetaure-details">
-							<h4 class="main-color">1. Dínos lo que buscas</h4>							
-						</div>
-					</div>
-					<!-- end single feature item -->
-					<!-- begin single feature item -->
-					<div class="feature">						
-						<hr>
-						<div class="fetaure-details">
-							<h4 class="main-color" style="line-height: 2.0;">2. En 72h recibirás un único email con todas las ofertas personalizadas</h4>							
-						</div>
-					</div>
-					<!-- end single feature item -->
-
-					<!-- begin single feature item -->
-					<div class="feature">					
-						<hr>
-						<div class="fetaure-details">
-							<h4 class="main-color">3. Elige y reserva con el hotel</h4>
-							<hr>
-							<p><i class="fa fa-warning fa-fw"></i>Pedimos tu email para enviarte ofertas <strong>privadas y personalizadas</strong>.
-							</p>
-						</div>
-					</div>
-					<!-- end single feature item -->
-				</div>
-			</div>
 		</div>
 	</div>
-</section>
 
-<!-- end features section -->
+	<span class="mouse"></span>
+</div>
+</section>
+<!-- end intro section -->
 
 <!-- begin iframe section -->
 
@@ -218,43 +185,63 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!-- end iframe section -->
 
 <!-- begin newsletter section -->
-<section class="newsletter" id="newsletter">
+<section class="newsletter" id="newsletter">	
+	
   <div class="container">  
+  <h2 style="margin-bottom:30px;color:#FFF;">Receive your offers</h2>
 	   <form method="post" name="contact_form" id="contact_form">
 
 			<!-- <fieldset> -->
 				<div class="row">
-					<div class="col-xs-6 col-md-3 margin-vy">
-						<label class="sr-only">Fecha de entrada</label>
+					<div class="col-md-3 margin-vy">
+						<label class="sr-only">Check In</label>
 						<div class="input-group">
-							<span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>							
-							<input type="text" class="form-control" data-date-format="dd-mm-yyyy" id="check_in" readonly="readonly" placeholder="Entrada">
+							<div class="input-group-addon">Check In</div>
+							<input type="text" class="form-control" data-date-format="dd-mm-yyyy" id="check_in" readonly="readonly">
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3 margin-vy">
-						<label class="sr-only">Fecha de salida</label>
+					<div class="col-md-3 margin-vy">
+						<label class="sr-only">Check Out</label>
 						<div class="input-group">
-							<span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
-							<input type="text" class="form-control" data-date-format="dd-mm-yyyy" id="check_out" readonly="readonly" placeholder="Salida">
+							<div class="input-group-addon">Check Out</div>
+							<input type="text" class="form-control" data-date-format="dd-mm-yyyy" id="check_out" readonly="readonly">
 						</div>
-					</div>					
+					</div>
+					<div class="col-md-6 margin-vy">
+						<label class="sr-only">Maximum budget for your stay (in euros)</label>
+						<div class="input-group">
+							<div class="input-group-addon">
+								<span class="hidden-xs">Maximum budget for your stay</span>
+								<span class="visible-xs">Total maximum budget</span>
+							</div>
+							<input type="text" min="0" class="form-control" id="price_max">
+							<div class="input-group-addon">&euro;</div>
+						</div>
+					</div>
 				</div>
 			<!-- </fieldset> -->
-			<!-- <fieldset> -->
 				<div class="row">
+					<div class="col-md-3 margin-vy">
+						<label class="sr-only">Email</label>
+						<div class="input-group">
+							<div class="input-group-addon">Email</div>
+							<input type="text" class="form-control" id="email" placeholder="solofertas@woutel.com" required>
+						</div>
+					</div>
 					<div class="col-md-9 margin-vy">
-						<label class="sr-only">Huéspedes</label>
+						<label class="sr-only">Guests</label>
 						<div id="input_group_guests" class="input-group">
-							<div id="input_group_addon_guests" class="input-group-addon"><i class="fa fa-group fa-fw"></i></div>							
+							<div id="input_group_addon_guests" class="input-group-addon">Guests</div>
 							<!--  -->
 									<div id="initial_select">
+
 										<select id="select_guests" class="selector">
-												<option value="0">2 Adultos, 1 habitación, 0 niños.</option>
-												<option value="1">Otras opciones</option>
+												<option value="0">2 Adults, 1 room, 0 children.</option>
+												<option value="1">Other options</option>
 										</select>
 									</div>
 									<div id="selected_guests_other" style="display: none;padding:15px;color:#FFF;line-height:2;">
-									Habitaciones
+									Rooms
 										<span class="select-pad">
 										<select id="select_rooms">
 											<option value="1">1</option>
@@ -269,7 +256,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 											<option value="10">10</option>
 										</select>
 										</span>
-									<br/>Adultos
+									Adults
 										<span class="select-pad">
 										<select id="select_people">
 											<option value="1">1</option>
@@ -284,7 +271,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 											<option value="10">10</option>
 										</select>
 										</span><span class="visible-xs-inline"><br /></span>
-									<span class="display:inline-box;">Niños
+									<span class="display:inline-box;">Children
 										<span class="select-pad">
 										<select id="select_children">
 											<option value="0">0</option>
@@ -301,41 +288,24 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 										</select>
 										</span></span>
 										<div id="wrap_children" style="display: none;">
-											Edades de los niños
+											Age of Children
 											<div id="children"></div>
 										</div>
 									</div>
 							<!--  -->
 						</div>
-					</div>				
-				</div>
-			<!-- </fieldset> -->
-				<div class="row">
-					<div class="col-md-3 margin-vy">
-						<label class="sr-only">Tu email</label>
-						<div class="input-group">
-							<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>	
-							<input type="text" class="form-control" id="email" placeholder="Tu email para recibir las ofertas" required>
-						</div>
 					</div>
-					<div class="col-md-3 margin-vy">
-						<label class="sr-only">Presupuesto total máximo para la estancia (en euros)</label>
-						<div class="input-group">														
-							<div class="input-group-addon">&euro;</div>
-							<input type="text" min="0" class="form-control" id="price_max" placeholder="Presupuesto total estancia">
-						</div>
-					</div>					
 				</div>
 				<div class="row">
 					<div class="col-md-9 margin-vy">
-						<label class="sr-only">Comentario</label>
+						<label class="sr-only">Comments</label>
 						<div class="input-group">
-							<span class="input-group-addon"><i class="fa fa-pencil fa-fw"></i></span>
-							<input type="text" class="form-control" id="comment" placeholder="¿Necesitas algo más?">
+							<div class="input-group-addon">Comments</div>
+							<input type="text" class="form-control" id="comment" placeholder="E.G: Public WiFi and breakfast included">
 						</div>
 					</div>
 					<div class="col-md-2 margin-vy">
-						<button type="button" class="submit btn btn-send" id="send_request" value="Recibir Ofertas Personalizadas!">Recibir Ofertas Personalizadas!</button>
+						<button type="button" class="submit btn btn-send" id="send_request" value="Receive Offers!">Receive Offers!</button>
 					</div>
 				</div>				
 		</form>		
@@ -349,8 +319,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		<div class="row">
 			<div class="col-md-12">
 				<div class="section-head wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-					<h1>Sobre Woutel</h1>
-					<p>¿Qué te ofrecemos?</p>
+					<h1>About</h1>
+					<p>What do we offer?</p>
 					<span class="underline"></span>
 				</div>
 			</div>
@@ -361,8 +331,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 				<!-- begin single service item -->
 				<div class="service wow fadeIn animated" data-wow-offset="10">
 					<i class="fa fa-eur"></i>
-					<h4>Las mejores condiciones</h4>
-					<p>Los hoteles te enviarán una oferta con su mejor precio directo. Exclusivamente a ti.</p>
+					<h4>The best conditions</h4>
+					<p>Hotels will send you a private and personal offer with their best direct price.</p>
 				</div>
 				<!-- end single service item -->
 			</div>
@@ -370,8 +340,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 				<!-- begin single service item -->
 				<div class="service wow fadeIn animated delay" data-wow-offset="10">
 					<i class="fa fa-bed"></i>
-					<h4>Los mejores hoteles</h4>
-					<p>Seleccionamos nuestros hoteles de 1 en 1. Da igual si es low cost o 5*, lo importante es tu experiencia.</p>
+					<h4>The best hotels</h4>
+					<p>We hand pick our hotels. No matter if it is low cost or a 5 star hotel, your experience is what really matters.</p>
 				</div>
 				<!-- end single service item -->
 			</div>
@@ -379,8 +349,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 				<!-- begin single service item -->
 				<div class="service wow fadeIn animated delay-long" data-wow-offset="10">
 					<i class="fa fa-support"></i>
-					<h4>Atención personalizada</h4>
-					<p>Queremos ayudarte en cualquier momento por chat, teléfono o email. Preferiblemente de 8:00 a 23:00.</p>
+					<h4>Personalized attention</h4>
+					<p>We will be glad to assist you at any time by chat, email or phone. 9:00 to 21:00 CET</p>
 				</div>
 				<!-- end single service item -->
 			</div>
@@ -389,22 +359,90 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	</div>
 </section>
 <!-- end services section -->
-<!-- begin reviews section -->
 
-<section class="reviews" id="reviews">
+<!-- begin services section -->
+<section class="services works" id="services-works">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="section-head wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-					<h1>Testimonios</h1>
-					<p>¿Cómo fue tu experiencia con nosotros?</p>
-					<span class="underline"></span>
+					<h1>How it works</h1>
+					<p>The easiest way to get the best price</p>
+					<span class="underline-works"></span>
 				</div>
 			</div>
 		</div>
+
 		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<!-- begin single service item -->
+				<div class="service wow fadeIn animated" data-wow-offset="10">
+					<p><img src="images/icon-buscas.png"></p>
+					<h4>Express yourself</h4>
+					<p>Let us know what your interests and needs so we can grant the best service.</p>
+				</div>
+				<!-- end single service item -->
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<!-- begin single service item -->
+				<div class="service wow fadeIn animated delay" data-wow-offset="10">
+					<p><img src="images/icon-recibe.png"></p>
+					<h4>Receive personalized offers</h4>
+					<p>In 72 hours or less you will receive, in a single email, the best offers of the best properties.</p>
+				</div>
+				<!-- end single service item -->
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<!-- begin single service item -->
+				<div class="service wow fadeIn animated delay-long" data-wow-offset="10">
+					<p><img src="images/icon-reserva.png"></p>
+					<h4>Look and book</h4>
+					<p>Choose the best offer and close the deal with the hotel.</p>
+				</div>
+				<!-- end single service item -->
+			</div>
+		</div>
+
+	</div>
+</section>
+<!-- end services section -->
+
+
+<!-- begin reviews section -->
+
+<section class="reviews" id="reviews">
+
+	<div class="container">
+
+
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<div class="section-head wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+					<h1>Testimonials</h1>
+
+					<p>How was your experience with us?</p>
+					<span class="underline"></span>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+		<div class="row">
+
 			<div class="testemonials wow fadeInUp animated" data-wow-offset="10" data-wow-duration="1s">
+
+
+
 				<!-- begin single testomial item -->
+
 				<div class="testemonial">
 
 					<div class="col-md-5 client-data">
@@ -419,7 +457,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 							<h4>Carolina</h4>
 
-							<p>Usuaria hotel en Sevilla</p>
+							<p>User stayed at Seville</p>
 
 						</div>
 
@@ -429,7 +467,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 						<div class="client-quote">
 
-							<p>"Es la primera vez que uso un portal como este. Fue rápido y ahorramos 20€ con la oferta del hotel."</p>
+							<p>"It's the first time I use a site like this. It was fast and we saved 20€ with the hotel's offer."</p>
 						</div>
 					</div>
 				</div>
@@ -451,7 +489,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 							<h4>Pedro</h4>
 
-							<p>Usuario hotel en Sevilla</p>
+							<p>User stayed at Seville</p>
 
 						</div>
 
@@ -461,7 +499,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 						<div class="client-quote">
 
-							<p>"Recibimos ofertas de 3 hoteles recomendables y en 4 días reservamos a buen precio."</p>
+							<p>"We received offers from 3 nice hotels and booked within 4 days at a good rate."</p>
 
 						</div>
 
@@ -485,7 +523,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 							<h4>Gloria</h4>
 
-							<p>Usuaria hotel en Sevilla</p>
+							<p>User stayed at Seville</p>
 
 						</div>
 
@@ -495,12 +533,13 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 						<div class="client-quote">
 
-							<p>"Supersatisfechos con la experiencia."</p>
+							<p>"Supersatisfied with the experience."</p>
 						</div>
 					</div>
 				</div>
 				<!-- end single testomial item -->
 			</div>
+
 		</div>
 	</div>
 </section>
@@ -513,22 +552,30 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		<div class="row wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
 			<div class="col-md-3 col-sm-3">
 				<!-- begin logo footer -->
-				<a href="http://www.woutel.com"><img src="images/woutel-logo-footer.png" alt="Logo Woutel"></a>
+				<a href="http://www.woutel.com/en"><img src="images/woutel-logo-footer.png" alt="Logo Woutel"></a>
 				<!-- end logo footer -->
-				<p>Donde los mejores hoteles de <strong>Sevilla</strong> te encuentran.
-				</p>
+				<p>Where the best hotels in <strong>Seville</strong> find you.</p>
 			</div>
 
-			<div class="col-md-2 col-md-offset-1 col-sm-3">		
+			<div class="col-md-2 col-md-offset-1 col-sm-3">
+				<h4>Woutel</h4>
 				<div class="underline-small"></div>
 				<ul>
 					<li>
-						<a href="terminos.html"><i class="fa fa-file-text"> </i> Términos y Condiciones</a>
+						<a href="terminos.html"><i class="fa fa-file-text"> </i> Terms and Conditions</a>
 					</li>
+				</ul>
+			</div>
+
+			<div class="col-md-2 col-md-offset-1 col-sm-3">
+				<h4>Contact</h4>
+				<div class="underline-small"></div>
+				<ul>
 					<li><i class="fa fa-phone"> </i> <a href="tel:+34678717319">678 717 319</a></li>
+					<li><i class="fa fa-comments-o"> </i> <a href="javascript:void($zopim.livechat.window.openPopout())">Live Chat</a></li>
 					<li><i class="fa fa-envelope-o"> </i> info@woutel.com</li>
 				</ul>
-			</div>			
+			</div>
 
 			<div class="col-md-2 col-md-offset-1 col-sm-3">
 				<h4>Social</h4>
@@ -569,7 +616,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <script src="js/bootstrap-datepicker.js"></script>
 
 <!-- Custom Javascript -->
-<script src="js/mainform.js"></script><script src="http://www.parsecdn.com/js/parse-1.3.5.min.js"></script>
+<script src="js/mainform.js"></script>
+<script src="http://www.parsecdn.com/js/parse-1.3.5.min.js"></script>
 <!-- MouseFlow Javascript -->
 
     <script type="text/javascript">

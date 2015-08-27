@@ -98,6 +98,6 @@ $(document).ready(function() {
 				}
 			});	*/	
 		}
-		else {alert("Debe introducir correctamente los campos obligatorios.");}
+		else {alert("You must correctly enter the required fields.");}
 	});
 });
