@@ -860,3 +860,30 @@ padding: 5px 15px;
     border-color: #007885;
 }
 #terminos{margin-top:80px;}
+
+/* Vy Listado hoteles
+====================================================== */
+
+.ficha{
+-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+background-color:#FAFAFA;
+border:1px solid #E1E1E1;
+margin-top:20px;
+}
+.hotel-title{
+text-align:center;
+margin-top:20px;}
+.hotel-image{
+padding-top:20px;max-height:330px;overflow:hidden;
+}
+.der-col{
+min-height:400px;padding-top:25px;
+}
+.margen{margin:-10px 0px 10px 0px;padding-bottom:5px;width:60px;}
+.map-img{float:left;width:65px;text-align:right;margin:10px 0px 10px 0px;}
+.street{float:right;max-width:190px;}
+.btn-completa{background-color:#199CB0;color:#FFF;}
+.f-completa{text-align:center;clear:both;margin-bottom:20px;}
+.f-comentarios{min-height:420px;padding-top:25px;border-left:1px solid #E1E1E1;}
